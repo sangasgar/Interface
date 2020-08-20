@@ -6,11 +6,11 @@ public class Robot implements Jumper, Runnable  {
     }
     @Override
     public void jump() {
-        System.out.println(name + " прыгает.");
+        System.out.println("Робот " + name + " прыгает.");
     }
 
     @Override
     public void run() {
-        System.out.println(name + " бегает.");
+        System.out.println("Робот " + name + " бегает.");
     }
 }

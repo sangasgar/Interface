@@ -1,13 +1,11 @@
-public class Wall {
+public class Wall  implements Jumper {
 
-    public void jump(Cat cat) {
-        System.out.println("Кошка успешно прыгнула.");
+    @Override
+    public void jump() {
+        System.out.println("Участник прыгает");
     }
-    public void jump(Human human) {
-        System.out.println("Человек успешно прыгнул.");
-    }
-    public void jump(Robot robot) {
-        System.out.println("Робот успешно прыгнул.");
+    public static void runningTrack(Runnable r) {
+        r.run();
     }
 }
 

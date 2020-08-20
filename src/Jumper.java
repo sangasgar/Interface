@@ -1,4 +1,4 @@
 public interface Jumper {
     int height = 0;
-    void jump();
+    void jump(int h);
 }
