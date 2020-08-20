@@ -1,8 +1,9 @@
-public class Robot implements Jumper, Runnable  {
-    String name;
-    int jumpMax = 2;
-    public Robot(String name){
+public class Robot extends Member implements Jumper, Runnable  {
+
+    public Robot(String name,  int maxJump,  int maxRun){
         this.name = name;
+        this.jumpMax = maxJump;
+        this.runMax = maxRun;
     }
     @Override
     public void jump() {
@@ -12,5 +13,10 @@ public class Robot implements Jumper, Runnable  {
     @Override
     public void run() {
         System.out.println("Робот " + name + " бегает.");
+    }
+    @Override
+    public void me() {
+        int sqt;
+        sqt =  this.runMax;
     }
 }

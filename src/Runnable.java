@@ -1,5 +1,5 @@
-@FunctionalInterface
-public interface Runnable {
 
-    void run(int l);
+public interface Runnable  {
+    void run();
+    void me();
 }
